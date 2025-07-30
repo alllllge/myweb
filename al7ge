@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تم الاختراق</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hack-overlay">
+        <img src="https://cdn.discordapp.com/attachments/1088147577473605754/1400179742317084722/image.png?ex=688bb280&is=688a6100&hm=82231a767f63da87723eb6b4bc9944dcaed4117e60176b8697a62cf4b4b13bea&" alt="هكر" class="hack-image">
+        <h1>💀 The Server Has Been Hacked 💀</h1>
+        <p>By <span class="server-name">The Iraqi Mafia</span></p>
+        <p class="warning">⚠️ Go Fix Your Anticheat ⚠️</p>
+    </div>
+
+    <audio id="bg-audio" autoplay loop>
+        <source src="https://cdn.discordapp.com/attachments/1088147577473605754/1400180841602224211/iraqi-mafia-king-saddam-fypage-saddamhussein-trending-128-ytshorts.savetube.me.mp3?ex=688bb386&is=688a6206&hm=aba6c669ee1686925a3f2b46a7d5584553bbf8d16c9bb875259cc8c35ad206c7&" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // رفع الصوت لأعلى شيء
+        const audio = document.getElementById("bg-audio");
+        audio.volume = 1.0;
+
+        window.addEventListener('message', function (event) {
+            if (event.data.action === "show") {
+                document.body.style.display = "flex";
+                audio.play();
+            } else if (event.data.action === "hide") {
+                document.body.style.display = "none";
+                audio.pause();
+            }
+        });
+    </script>
+</body>
+</html>
